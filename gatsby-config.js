@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "My Gatsby Site",
+    author: "Spiros Stampoulis",
+    siteUrl: "http://gatsbyv3master.gtsb.io"
   },
   plugins: [
     "gatsby-plugin-sass",
