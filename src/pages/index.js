@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import Header from "../../components/molecules/header";
 
 // styles
 const pageStyles = {
@@ -134,10 +133,9 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet='utf-8' />
         <title>My Title</title>
-        <link rel='canonical' href='http://gatsbyv3master.gtsb.io' />
+        <link rel='canonical' href='http://mysite.com/example' />
         <html lang="en" />
       </Helmet>
-      <Header />
       <main style={pageStyles}>
         <title>Home Page</title>
         <h1 style={headingStyles}>
