@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import logo from "../../images/logo.svg";
-import search from "../../images/search.svg";
+// import logo from "../../images/logo.svg";
+// import search from "../../images/search.svg";
 // import Navigation from "../components/sections/Navigation";
 import "../styles.css"
 import Geolocation from "../../helpers/geolocation";
