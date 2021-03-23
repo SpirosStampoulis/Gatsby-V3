@@ -1,5 +1,12 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import logo from "../../images/logo.svg";
+import search from "../../images/search.svg";
+// import Navigation from "../components/sections/Navigation";
+import "../styles.css"
+import Geolocation from "../../helpers/geolocation";
+
+// import Navigation from "../components/sections/Navigation";
 
 // styles
 const pageStyles = {
@@ -134,8 +141,11 @@ const IndexPage = () => {
         <meta charSet='utf-8' />
         <title>My Title</title>
         <link rel='canonical' href='http://mysite.com/example' />
-        <html lang="en" />
+        <html lang='en' />
       </Helmet>
+      
+      <Geolocation />
+      {/* <Navigation /> */}
       <main style={pageStyles}>
         <title>Home Page</title>
         <h1 style={headingStyles}>
