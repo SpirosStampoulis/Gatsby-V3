@@ -4,4 +4,3 @@ function keygen() {
     return `${chr4()}-${chr4()}-${chr4()}-${chr4()}-${chr4()}-${chr4()}-${chr4()}-${chr4()}`;
   }
   export default keygen;
-  
