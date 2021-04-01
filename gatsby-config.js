@@ -13,6 +13,7 @@ module.exports = {
     author: "Spiros Stampoulis",
     siteUrl: "http://gatsbyv3master.gtsb.io"
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
