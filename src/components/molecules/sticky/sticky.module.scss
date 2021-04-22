@@ -1,0 +1,24 @@
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 14px rgba(0,0,0,.09);
+    background: #fff;
+    z-index: var(--cookie-consent-index)
+}
+
+.sticky.top {
+    top: 0;
+    bottom: auto
+}
+
+.sticky .container {
+    max-width: var(--main-container-max);
+    margin: 0 auto;
+    padding: 0 1.6rem
+}
+
+.notScrolled {
+    visibility: hidden
+}
