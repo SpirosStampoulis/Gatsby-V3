@@ -1,0 +1,62 @@
+.item-itemWrapper.item-dropDownButton {
+    display: flex;
+    justify-content: space-between
+}
+
+.item-itemWrapper.item-dropDownButton .item-item {
+    width: 80%
+}
+
+.item-item {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem
+}
+
+@media only screen and (min-width: 992px) {
+    .item-item {
+        padding:1.5rem 1.35rem;
+        font-size: 1.35rem
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    .item-item {
+        padding:1.5rem 2rem;
+        font-size: 1.6rem
+    }
+}
+
+.item-item.item-inactiveLink {
+    position: relative;
+    pointer-events: none
+}
+
+@media only screen and (max-width: 991px) {
+    .item-item.item-inactiveLink {
+        pointer-events:none
+    }
+}
+
+.item-dropDownButton button {
+    width: 20%;
+    max-width: 75px;
+    position: relative;
+    background-color: var(--primary-hover-color)
+}
+
+.item-dropDownButton button.item-active:after {
+    transform: translateY(0) rotate(-135deg)
+}
+
+.item-dropDownButton button:after {
+    transition: .2s;
+    content: "";
+    border: solid var(--nav-icon-color);
+    border-width: 0 .33333rem .33333rem 0;
+    padding: .33333rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: calc(50% - .4rem);
+    left: calc(50% - 1.2rem);
+    margin-left: 1rem
+}
